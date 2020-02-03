@@ -93,19 +93,3 @@ class fileSplitter():
                         file_part += 1
         
         return file_name_list
-
-if __name__ == "__main__":
-    #input("Premi ENTER per testare la funzione splitter...")
-    #file_name = input("Nome del file da splittare: ")
-    #dim = int(input("Dim dei pachetti in byte: "))
-
-    my_splitter = fileSplitter()
-    #nuovi_files = my_splitter.split("bitaddress.org.pdf", 51200)
-    #print(nuovi_files)
-    #input("reverse...")
-
-    #my_splitter.reverseSplit(nuovi_files)
-    #print(os.getcwd())
-    file_name_list = my_splitter.foundSplittedFile(os.getcwd(), "bitaddress.org.pdf")
-    my_splitter.reverseSplit(file_name_list)
-    print(file_name_list)
